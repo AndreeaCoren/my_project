@@ -1,0 +1,168 @@
+body {
+  display: flex;  /* setting "display: flex" allows its children (e.g. "main" below) to use the "flex" property */
+  flex-direction: column;
+  padding-top: 56px;  /* allow enough space for a fixed navbar (56px is the height of the navbar here) */
+  min-height: 100vh;  /* i.e minimum width is 100% of the "viewport height"... i.e the full screen height */
+}
+.navbar-dark .navbar-brand {
+    color: #e79d5f;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #e79d5f;
+}
+.navbar-dark .navbar-nav .active>.nav-link,
+.navbar-dark .navbar-nav .nav-link:hover {
+    color: #dc7308;
+}
+
+#carousel-header {
+  height: calc(100vh - 56px - 60px);
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 0;
+  color: #dc7308;
+}
+#carousel-header h1 {
+  font-size: 4.5rem;
+  margin-top: 50px;
+}
+#carouselExampleIndicators {
+  background: black;
+}
+#carouselExampleIndicators img {
+  height: calc(100vh - 56px - 60px);
+  object-fit: cover;
+  opacity: 0.5;
+}
+
+footer {
+  padding: 0 10px;
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 12px;
+  background: #757575;
+}
+footer p {
+  margin-bottom: 0;
+}
+
+footer a {
+  margin: 5px;
+  text-decoration: none!important;
+
+}
+
+.social-icon {
+  display: inline-flex;  /* allows use of "justify-content" and "align-items" properties */
+  width: 50px;
+  height: 50px;
+  color: #e79d5f;
+  background-color: #343a40;
+  justify-content: center;  /* horizontally centers the contents (the FontAwesome icon) */
+  align-items: center;  /* vertically centers the contents (the FontAwesome icon) */
+  border-radius: 50%;  /* makes it round (circle if width and height are the same) */
+}
+
+.social-icon:hover {
+  color: #dc7308;  /* change color when hover over the link */
+}
+
+.jumbotron {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../images/cranes.jpg);
+  background-size: cover;
+  color: #ffffff;
+  height: calc(100vh - 56px);
+  width: 100vw;
+  text-shadow: 0.25px 3.25px 3.25px #000000;
+  border-radius: 0;
+}
+
+.jumbotron h2 {
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+}
+
+}
+
+section .row img {
+  margin: 0 0 30px;
+  width: 100%;
+}
+
+.col-md-6 {
+  margin: 0 0 30px;
+}
+
+.btn.btn-primary {
+  border-radius: 2px;
+  border: 0px;
+  color: #fbd1d5;
+  text-shadow: none;
+  background-color: #ffffff;
+}
+
+.btn.btn-primary:hover {
+  color: #ffffff;
+  background-color: #fbd1d5;
+}
+
+.btn-secondary {
+  background-color: #E8DFE0;
+  color: #ffffff;
+  margin: 0 0 30px;
+}
+
+.hero {   /*for the about page*/
+  text-align: flex;
+  font-size: 18px
+}
+
+#presentation-of-sectors img {
+  width: 100%;
+  object-fit: fill;
+}
+
+#under-construction {
+  flex: 1;
+}
+#under-construction img{
+  width: 100%;
+  height: calc(100vh - 56px - 60px);
+  object-fit: cover;
+}
+
+
+
+/* === responsive media queries - presentation section === */
+@media (min-width: 576px) {
+  #presentation-of-sectors img {
+    height: 150px;
+  }
+}
+
+@media (min-width: 768px) {
+  #presentation-of-sectors img {
+    height: 210px;
+  }
+}
+
+@media (min-width: 992px) {
+  #presentation-of-sectors img {
+    height: 290px;
+  }
+}
+
+@media (min-width: 1200px) {
+  #presentation-of-sectors img {
+    height: 350px;
+  }
+}
